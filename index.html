@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="utf-8">
+        <title>Index</title>
+        <link rel="stylesheet" type="text/css" href="lab3.css">
+    </head>
+    <body>
+      <nav>
+        <table id = "navtest">
+          <tr>
+            <td><a href="about-me.html">About me</a></td>
+            <td><a href="form.html">Post</a></td>
+            <td><a href="blog.html">Blog</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="index.html">Login/Register</a></td>
+          </tr>
+        </table>
+      </nav>
+        <form id="registerForm" action="register.php" method="post">
+            <p>
+                <label> Email: <br>
+                    <input type="text" size="25" maxlength="20" id="inputemail" name="inputemail" >
+                    <span id="email-error" style="color: red;"></span>
+                </label>
+            </p>
+            <p>
+                <label>Password:<br>
+                    <input type="text" size="25" maxlength="20" id="pass" name = "pass" >
+                    <span id="pass-format" style="color: red;"></span>
+                </label>
+            </p>
+            <p>
+                <label> Re-enter Password:<br>
+                    <input type="password" size="25" maxlength="20" id="re-password" placeholder="*******" name  = "re-password">
+                    <span id="password-error" style="color: red;"></span>
+                </label>
+            </p>
+            <p>
+                <button > Register </button>
+            </p>
+        </form>
+
+        <form id="loginForm" action="login.php" method="post">
+            <p>
+                <label> Email: <br>
+                    <input type="text" id="login-email" name="email"><br><br>
+                    <span id="login-email-error" style="color: red;"></span>
+                </label>
+            </p>
+            <p>
+                <label>Password:<br>
+                    <input type="password" id="login-password" name="password">
+                    <span id="login-password-error" style="color: red;"></span>
+                </label>
+            </p>
+            <p>
+                <button > Login </button>
+            </p>
+            
+        </form>
+
+        <script type="text/javascript" src="/Users/alhelal/Desktop/484 git/lab3/index.js"></script>
+        
+    </body>
+</html>

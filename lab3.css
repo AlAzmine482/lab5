@@ -1,0 +1,125 @@
+body{
+  text-align: left; 
+}
+img {
+  float: left;
+  font-family: 109945548;
+  border: 2px;
+  padding: 10px;
+
+}
+.container {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+.info{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh; /* Adjust this value to set the container height */
+  justify-content: center;
+  float: left;
+  text-align: left;
+}
+
+.info div {
+ 
+  margin-left: 10px;
+}
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  
+}
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  color:red;
+  margin: 0;
+  padding: 0;
+  
+}
+table, th, td {
+  border:2px solid black;
+  margin-left: auto;
+  margin-right:auto;
+  font-size: 14pt;
+  font-style: Georgia, serif;
+  padding: 5;
+}
+
+div p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14pt;
+  color: blueviolet;
+}
+.calculator{
+  border: 1px solid black;
+  margin: left;
+  background-color:white;
+  padding: 10px;
+  border-radius: 1em;
+  height: 380px;
+  width: 400px;
+  margin: auto;
+  background-color: #191b28;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.display-box{
+  font-family: 'Orbitron', sans-serif;
+  background-color: #dcdbe1;
+  border: solid black 0.5px;
+  color: black;
+  border-radius: 5px;
+  width: 82%;
+  height: 65%;
+}
+
+
+input[type = "button"] {
+  width: 100%;
+  font-family:'Times New Roman', Times, sans-serif;
+  background-color: gray;
+  color:white;
+  border: solid black 0.5px;
+  height: 70%;
+  outline: none;
+
+}
+
+input:active[type=button] {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  }
+ 
+  #navtest table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #navtest td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #navtest td:not(:empty) {
+    background-color: #a2d2ff;
+    color: white ;
+    border: 1px solid black;
+  }
+  
+  #navtest td:empty {
+    background-color: white;
+    color: black;
+    border: none;
+  }
+  
+  #cookie-data {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }

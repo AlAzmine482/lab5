@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="utf-8">
+    <title>About me</title>
+    <link rel="stylesheet" type="text/css" href="lab3.css">
+
+</head>
+
+<body>
+
+  <nav>
+    <table id = "navtest">
+      <tr>
+        <td><a href="about-me.html">About me</a></td>
+        <td><a href="form.html">Post</a></td>
+        <td><a href="blog.html">Blog</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="index.html">Login/Register</a></td>
+      </tr>
+    </table>
+  </nav>
+ 
+
+  <form id="myForm" action="form.php" method="post">
+      <p>
+      <Label> Post <br>
+        <textarea id= "Post"  name = "Parapost" rows = "4" cols = "50" >
+          
+        </textarea>
+      </p>
+        <p>
+            <label> TaskName (Letters only): <br>
+             <input type="text" size="25" maxlength="20" id="inputname"  onkeypress="nameup()" name = "taskname">
+             <span id="name-error" style="color: red;"></span>
+            </label>           
+        </p>
+        <p>
+            <label> Date (MM/DD/year):<br>
+                <input type="text" size="25" maxlength="20" id="date" placeholder="MM/DD/YYYY" onkeypress="datecheck()" name = "taskdate">
+                <span id="date-error" style="color: red;"></span>
+            </label>        
+        </p>
+        <table class="calculator">
+            <tr>
+              <td colspan="3">
+                <input class="display-box" type="text" id="result" disabled="">
+              </td>
+              <td>
+                <input type="button" value="C" data-action="clear" id = "clear">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="1" class="number-button">
+              </td>
+              <td>
+                <input type="button" value="2" class="number-button">
+              </td>
+              <td>
+                <input type="button" value="3" class="number-button">
+              </td>
+              <td>
+                <input type="button" value="/" data-action="divide" id  = "divide">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="4" class="number-button">
+              </td>
+              <td>
+                <input type="button" value="5" class="number-button">
+              </td>
+              <td>
+                <input type="button" value="6" class="number-button">
+              </td>
+              <td>
+                <input type="button" value="-" data-action="subtract" id  = "subtract">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="7" class="number-button">
+              </td>
+              <td>
+                <input type="button" value="8" class="number-button">
+              </td>
+              <td>
+                <input type="button" value="9" class="number-button">
+              </td>
+              <td>
+                <input type="button" value="+" data-action="add" id = "add">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="." id="decimal-button">
+              </td>
+              <td>
+                <input type="button" value="0" class="number-button">
+              </td>    
+              <td>
+                <input type="button" value="=" data-action="calculate" id = "calculate">
+              </td>
+              <td>
+                <input type="button" value="*" data-action="multiply" id = "multipy">
+              </td>
+            </tr>
+          </table>
+          
+        <p>
+            <button id = "save-button">Save</button> 
+        </p>
+        <p id="hoursWorkedResult"> 
+          <label id="hours-worked-label"> Hours Worked This Week:</label> 
+                <span id="hours-error"></span>
+            
+        </p>
+        <p> 
+          <button id  = "submit-form">Submit</button>
+        </p>
+        <!--<script type="text/javascript" src="about-me.js"></script>-->
+        <script type="text/javascript" src="form.js"></script>
+    </form>
+  
+</body>
+</html>
